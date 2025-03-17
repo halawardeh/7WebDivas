@@ -1,0 +1,172 @@
+body{
+    background-color:  #EBE8DB;
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+    
+}
+
+h1{
+    text-align: center !important;
+}
+
+#newsCards {
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#newsCards .container {
+    max-width: 1280px;
+    margin: 3rem auto;
+    padding: 1rem;
+    line-height: 1.25;
+    font-weight: 500;
+}
+
+#newsCards button {
+    font-size: 1rem;
+    padding: 0.35em 0.75em;
+    line-height: 1;
+    background-color: transparent;
+    border: 3px solid #B03052;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.1s;
+    outline: 0;
+    color:  #3D0301;
+    text-align: center;
+}
+
+#newsCards button:hover {
+    background-color: #D76C82 !important;
+    color: #FAFAFA !important;
+}
+
+/* .posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+} */
+.posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* Set to 3 columns */
+    gap: 2.5rem;
+    width: 95%; /* Ensure it takes the full width of its container */
+}
+
+
+.post__image {
+    width: 100%;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.post__image::before, .post__image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.post__image::before {
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    filter: blur(0);
+    transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
+    border-radius: 10px;
+}
+
+.post__image::after {
+    background: linear-gradient(30deg, #405712 0%, #A31621 100%);
+    opacity: 0.15;
+    transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
+}
+
+.post__content {
+    margin: -3rem 1.5rem 0;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+    transition: margin 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+}
+
+.post__inside {
+    overflow: hidden;
+    height: 4.85rem;
+    transition: height 0.2s ease-in-out;
+}
+
+.post__title {
+    font-size: 1.35rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: #3D0301;
+    ;
+    text-align: right;
+}
+
+.post__excerpt {
+    overflow: hidden;
+    margin: 0;
+    max-height: 6.25rem;
+    position: relative;
+    text-align: right;
+    color: #3D0301;
+    ;
+    font-weight: 400;
+}
+.post__image--1:before {
+    background-image: url("/images/iftar.jpg");
+  }
+  .post__image--2:before {
+    background-image: url("/images/");
+  }
+  .post__image--3:before {
+    background-image: url("/images/water.jpg");
+  }
+  .post__image--4:before {
+    background-image: url("/images/كسوةالعيد.webp");
+  }
+  .post__image--5:before {
+    background-image: url("/images/طرود.jpg");
+  }
+  .post__image--6:before {
+    background-image: url("/images/Charity.jpg");
+  }
+
+.post:hover .post__content {
+    margin-top: -9.8rem;
+}
+
+.post:hover .post__inside {
+    height: 11.65rem;
+}
+
+.post:hover .post__image::after {
+    opacity: 0.5;
+}
+
+.post:hover .post__image::before {
+    transform: scale(1.1);
+    filter: blur(10px);
+}
+
+@media (max-width: 426px) {
+    .post__content {
+        margin-top: -9.8rem;
+    }
+    .post__inside {
+        height: 11.65rem;
+    }
+}

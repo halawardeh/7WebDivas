@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/Feedback.css">
+    <title>تواصل معنا</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Dosis:wght@200..800&family=Labrada:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/navbar.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light shadow navbarStyle container">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center navCont">
+                <a class="navbar-brand fw-bold me-3" href="#"><img src="/images/logo1.png" width="100"></a>
+                <ul class="navbar-nav d-none d-lg-flex">
+                    <li class="nav-item"><a class="nav-link" href="/pages/index.html">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">النشاطات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/Feedback.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-end leftCont" id="navbarNav">
+                <ul class="navbar-nav left" id="auth-links">
+                    <li class="nav-item"><a class="nav-link" href="/pages/login.html">تسجيل الدخول</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">إنشاء حساب</a></li>
+                </ul>
+    
+                <ul class="navbar-nav d-lg-none" id="auth-links-mobile">
+                    <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">النشاطات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
+                </ul>
+    
+                <ul class="navbar-nav d-none" id="profile-links" style="width: 80%;">
+                    <li class="nav-item"><a class="nav-link" href="/pages/user_profile.html">بروفايل</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="logout()">تسجيل خروج</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="contact_us_2">
+        <div class="responsive-container-block big-container">
+            <div class="blueBG">
+            </div>
+            <div class="responsive-container-block container">
+                <form class="form-box">
+                    <div class="container-block form-wrapper">
+                        <p class="text-blk contactus-head">تواصل معنا</p>
+                        <p class="text-blk contactus-subhead">تواصل بفعالية وحقق أقصى استفادة!</p>
+                        <div class="responsive-container-block">
+                            <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
+                                <p class="text-blk input-title">الأسم الاول</p>
+                                <input style="color: #000 !important" class="input" id="ijowk" name="FirstName"
+                                    placeholder="...الرجاء إدخال الاسم الاول" required>
+                            </div>
+                            <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                                <p class="text-blk input-title">الأسم الاخير</p>
+                                <input class="input" id="indfi" name="LastName" placeholder="...الرجاء إدخال الاسم الأخير" required>
+                            </div>
+                            <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                                <p class="text-blk input-title">الايميل</p>
+                                <input class="input" id="ipmgh" name="Email" placeholder="...الرجاء إدخال الايميل" required>
+                            </div>
+                            <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                                <p class="text-blk input-title">رقم الهاتف</p>
+                                <input class="input" id="imgis" name="PhoneNumber" placeholder="الرجاء أدخال رقم الهاتف" required>
+                            </div>
+                            <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i">
+                                <p class="text-blk input-title">ما الذي يدور في بالك</p>
+                                <textarea class="textinput" id="i5vyy" placeholder="ما الذي يدور في بالك؟" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">إرسال</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+            <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="" style="direction: rtl !important;">
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #3D0301">
+      <!-- Grid container -->
+      <div class="container">
+        <!-- Section: Links -->
+        <section class="mt-5">
+          <!-- Grid row-->
+          <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">الرئيسية</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">من نحن</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">النشاطات</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-2">
+              <h6 class="text-uppercase font-weight-bold">
+                <a href="#!" class="text-white">تواصل معنا</a>
+              </h6>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row-->
+        </section>
+        <!-- Section: Links -->
+  
+        <hr class="my-5" />
+
+  
+        <!-- Section: Social -->
+        <section class="text-center mb-5" style="margin-top: 0;">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2); direction: ltr;"
+           >
+        © 2025 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+           >balsam.com</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+   
+    <script src="/js/Feedbackjs"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("q6_UjWNOjF6CX6Xe5");
+    </script>
+    <script src="/js/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

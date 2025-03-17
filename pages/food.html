@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>تقليل هدر الطعام في رمضان</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/RamadanActivity.css" rel="stylesheet">
+  <style>
+    /* تحسين تنسيق العناوين */
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: #F9F9F9;
+      color: #3D0301;
+    }
+    .project-category-icon {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .project-category-icon .img-container {
+      margin-right: 15px;
+    }
+    .img-icon {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+    }
+    .project-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #B03052;
+    }
+
+    /* تحسين الصورة */
+    .project-cover {
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* تحسين صندوق "تقليل هدر الطعام" */
+    .project-food-waste {
+      background-color: #FFF8F0;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    .project-food-waste h5 {
+      color: #B03052;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    .project-food-waste p {
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    /* تحسين تفاصيل التطوع */
+    .project-ngo {
+      margin: 20px 0;
+    }
+    .project-ngo-name {
+      margin: 15px 0;
+    }
+    .orange {
+      color: #FFCF50;
+      font-weight: bold;
+    }
+    .project-donors ul {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      list-style: none;
+    }
+    .project-donors li {
+      text-align: center;
+    }
+
+    /* تحسين الأزرار */
+    .btn {
+      background-color: #B03052;
+      color: white;
+      border: none;
+      width: 100%;
+      padding: 12px 0;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #9B1E46;
+    }
+
+    /* تحسين نافذة التسجيل */
+    .modal-content {
+      background-color: #F9F9F9;
+      color: #3D0301;
+      border-radius: 10px;
+    }
+    .modal-header {
+      background-color: #FFCF50;
+      color: #3D0301;
+      border-radius: 10px 10px 0 0;
+      border-bottom: none;
+    }
+    .modal-title {
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+    .form-control {
+      border-radius: 8px;
+      border: 1px solid #FFCF50;
+      background-color: #FFF;
+    }
+    .form-control:focus {
+      border-color: #B03052;
+      box-shadow: 0 0 5px rgba(176, 48, 82, 0.5);
+    }
+
+    /* تصميم التفاعل مع الخريطة */
+    .project-location a {
+      font-size: 1.1rem;
+      color: #FFCF50;
+      text-decoration: underline;
+    }
+
+    /* تحسين تباين النصوص */
+    .primary-text {
+      font-size: 1.2rem;
+      color: #3D0301;
+    }
+
+    /* تحسين المظهر العام للصفحة */
+    .container {
+      margin: 50px auto;
+    }
+    .separator-line1 {
+      height: 2px;
+      background-color: #FFCF50;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="project-block1">
+      <div>
+        <!-- القسم العلوي (اسم المشروع والفئة) -->
+        <div class="project-category-icon">
+          <div class="img-container">
+            <img class="img-icon" src="https://nahno-new.s3.eu-west-3.amazonaws.com/icons/category-20180312-133559.png" alt="">
+          </div>
+          <div class="project-name">
+            تقليل هدر الطعام في رمضان
+          </div>
+        </div>
+
+        <!-- القسم الأوسط -->
+        <div class="clearfix"></div>
+        <div class="project-block-left">
+          <!-- صورة المشروع -->
+          <div class="project-cover" style="background-image:url('https://i.pinimg.com/474x/63/9b/a5/639ba5f4430a0e09855d333cab293f68.jpg');">
+          </div>
+
+          <!-- قسم تقليل هدر الطعام -->
+          <div class="project-food-waste">
+            <h5>تقليل هدر الطعام في رمضان</h5>
+            <p>يشهد رمضان العديد من التحديات في مجال الطعام، حيث يُستهلك الكثير من الطعام ويتم التخلص من كميات كبيرة بشكل غير ضروري. من خلال هذا المشروع، نهدف إلى تقليل هدر الطعام عن طريق تنظيم حملات توعية وفعاليات لجمع الطعام غير المستهلك وتوزيعه على المحتاجين.</p>
+            <p>يشمل المشروع مجموعة من المبادرات مثل: جمع الطعام غير المستهلك، تنظيم موائد إفطار جماعية، وتوزيع الوجبات بشكل مدروس يضمن استفادة أكبر عدد من الأسر الفقيرة والمحتاجة.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- القسم الجانبي -->
+      <div class="project-block-right">
+        <!-- معلومات عدد ساعات التطوع -->
+        <div class="separator-line1"></div>
+        <!-- جدول المواعيد -->
+        <div class="project-ngo-name">
+          <div>
+            <span>ايام التطوع</span>
+            <span class="orange">2025-03-20</span>
+          </div>
+        </div>
+        <div class="separator-line1"></div>
+        <!-- المهارات المطلوبة -->
+        <div class="project-ngo-name">
+          <div class="project-details-box">
+            <p class="line-height underline-with-space primary-text"><b> الفئات المشاركة </b></p>
+          </div>
+          <div class="project-details-left-box">
+            <p class="line-height small-text">المطاعم والعائلات</p>
+          </div>
+        </div>
+        <!-- الفئة العمرية -->
+        <div class="project-ngo-name">
+          <div class="project-details-box">
+            <p class="line-height underline-with-space primary-text"><b>الفئة العمرية للمتطوعين</b></p>
+          </div>
+          <div class="project-details-left-box">
+            <div>من بين 20 -40 </div>
+          </div>
+        </div>
+        <div class="separator-line1"></div>
+        <!-- معلومات المتبرعين -->
+        <div class="project-donors text-normal">
+          <ul>
+            <li><span><b class="text-large en">40</b></span><br><span class="text-normal">العدد المطلوب</span></li>
+            <li><span><b class="text-large en">10</b></span><br><span class="text-normal">تحت الموافقة</span></li>
+          </ul>
+        </div>
+
+        <!-- أزرار المشاركة -->
+        <div class="project-contribute">
+          <!-- Modal Form -->
+          <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="registerModalLabel">نموذج التسجيل للتطوع</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">الاسم الكامل</label>
+                      <input type="text" class="form-control" id="name" placeholder="ادخل اسمك">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label">البريد الإلكتروني</label>
+                      <input type="email" class="form-control" id="email" placeholder="ادخل بريدك الإلكتروني">
+                    </div>
+                    <div class="mb-3">
+                      <label for="phone" class="form-label">رقم الهاتف</label>
+                      <input type="tel" class="form-control" id="phone" placeholder="ادخل رقم هاتفك">
+                    </div>
+                    <div class="mb-3">
+                      <label for="helpOrganize" class="form-label">هل ترغب في المساعدة في التنظيم؟</label>
+                      <select class="form-control" id="helpOrganize">
+                        <option value="yes">نعم</option>
+                        <option value="no">لا</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label for="dietaryRequirements" class="form-label">هل لديك متطلبات غذائية خاصة؟</label>
+                      <input type="text" class="form-control" id="dietaryRequirements" placeholder="مثل: نباتي، خالي من الجلوتين">
+                    </div>
+                   

@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #EBE8DB;
+    color: #3D0301;
+    text-align: center;
+    direction: rtl;
+    margin: 0;
+    /* padding: 20px; */
+    
+    background-image: url(/images/1-removebg-preview.png), url(/images/1-removebg-preview.png);
+    
+    background-position: left top, right top;
+    
+    background-repeat: no-repeat, no-repeat;
+    
+}
+
+
+.profile-container {
+    width: 50%;
+    margin: auto;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(176, 48, 82, 0.2);
+    transition: 0.3s;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.profile-header {
+    position: relative;
+}
+
+
+
+.profile-banner {
+    height: 200px;
+    background-color: #3D0301 !important; 
+    /* background: linear-gradient(30deg, #405712 0%, #A31621 100%); */
+    /* opacity: 0.15; */
+    position: relative;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #B03052;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.username {
+    margin-top: 70px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact {
+    font-size: 16px;
+    color: #B03052;
+}
+
+.profile-section {
+    text-align: right;
+    padding: 20px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(176, 48, 82, 0.1);
+}
+
+h3 {
+    color: #3D0301
+;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    background: rgba(176, 48, 82, 0.2);
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.list li:hover {
+    background: #D76C82;
+    transform: translateX(10px);
+    color: white;
+}
+
+/* زر التبرع */
+.donate-btn {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 12px;
+    background: #B03052;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.donate-btn:hover {
+    background: #D76C82;
+}
+
+/* تأثير الفوانيس */
+.lantern {
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}

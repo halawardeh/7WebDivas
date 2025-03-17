@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+*{
+    direction: rtl;
+    font-family: "Cairo", sans-serif;
+}
+
+a{
+    border-radius: 50px !important;
+    text-decoration: none !important;
+}
+
+/*Navbar Start*/
+.navbarStyle {
+    border-radius: 30px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #EBE8DB;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.navbarSlide {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.navbar .navbar-brand{
+    width: 10%;
+}
+
+.navCont{
+    width: 80%;
+}
+.navbar-nav{
+    width: 50%;
+}
+
+.navbar .nav-item, .nav-link{
+    width: 100% !important;
+    color: #3D0301 !important;
+}
+
+.navbar .nav-item a::after{
+    content: " ☽";
+    color: #FFCF50;
+    opacity: 0;
+  }
+
+  .navbar .nav-item a::before{
+    content: " ☾";
+    color: #FFCF50;
+    opacity: 0;
+  }
+
+  .navbar .nav-item a:hover{
+    color: #D76C82;
+  }
+
+  .navbar .nav-item a:hover::after{
+    opacity: 1;
+  }
+
+  .navbar .nav-item a:hover::before{
+    opacity: 1;
+  }
+
+.left{
+    width: 100%;
+}
+
+.leftCont{
+    width: 30%;
+}
+/*Navbar End*/
+
+.navbar {
+    z-index: 1000;
+}

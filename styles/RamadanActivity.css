@@ -1,0 +1,168 @@
+body {
+    background-color: #EBE8DB;
+    color: #3D0301;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .separator-line1 {
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+  }
+  /* تنسيق بلوك المشروع */
+  .project-block1 {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+  }
+  .project-category-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .img-container {
+    display: inline-block;
+  }
+  .img-icon {
+    width: 40px;
+    height: auto;
+  }
+  .project-name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #B03052;
+  }
+  /* البلوك الأيسر */
+  .project-block-left {
+    float: left;
+    width: 65%;
+    padding: 10px;
+  }
+  .project-cover {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .project-title-header {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  .project-ngo {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .project-ngo-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .project-ngo-name a {
+    text-decoration: none;
+    color: #B03052;
+    font-weight: bold;
+  }
+  .orange-link a {
+    color: #FFCF50;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .project-location a {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #B03052;
+    font-weight: bold;
+  }
+  /* البلوك الأيمن */
+  .project-block-right {
+    float: right;
+    width: 30%;
+    padding: 10px;
+  }
+  .project-block-right div {
+    margin-bottom: 10px;
+  }
+  .primary-text {
+    color: #B03052;
+    font-weight: bold;
+  }
+  .text-large {
+    font-size: 1.5rem;
+  }
+  .small-text {
+    font-size: 0.9rem;
+  }
+  .project-details-box p {
+    margin: 0;
+  }
+  .right-margin {
+    margin-right: 10px;
+  }
+  .project-contribute {
+    margin-top: 15px;
+  }
+  .button-mid-large {
+    background-color: #B03052;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .button-mid-large:hover {
+    background-color: #D76C82;
+  }
+  .follow-block {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 15px;
+    vertical-align: middle;
+  }
+  .icon-follow {
+    width: 24px;
+    height: 24px;
+    background: url('https://nahno-new.s3.eu-west-3.amazonaws.com/icons/follow.png') no-repeat center center;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .follow-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    color: #B03052;
+    font-weight: bold;
+  }
+  /* البلوك السفلي */
+  .project-block-footer {
+    margin-top: 20px;
+  }
+  .project-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  /* أزرار المشاركة */
+  .addthis_inline_share_toolbox {
+    font-size: 1rem;
+    color: #B03052;
+  }
+  @media (max-width: 768px) {
+    .project-block-left, .project-block-right {
+      float: none;
+      width: 100%;
+    }
+  }
