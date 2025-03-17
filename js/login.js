@@ -27,9 +27,7 @@ function previewImage() {
 }
 
 function saveToLocalStorage(event) {
-    event.preventDefault(); // منع الإرسال التقليدي للنموذج
-
-    // الحصول على القيم من الحقول
+    event.preventDefault(); 
     const fullName = document.getElementById('fullName').value;
     const phoneNumber = document.getElementById('phoneNumber').value;
     const email = document.getElementById('email').value;
@@ -37,25 +35,21 @@ function saveToLocalStorage(event) {
     const fileInput = document.getElementById('profileImage');
     const fileName = fileInput.files[0].name;
 
-    // تخزين البيانات في localStorage
     localStorage.setItem('fullName', fullName);
     localStorage.setItem('phoneNumber', phoneNumber);
     localStorage.setItem('email', email);
     localStorage.setItem('password', password);
     localStorage.setItem('image', fileName);
 
-    // بعد التسجيل، إخفاء الفورم وفتح صفحة الملف الشخصي أو تسجيل الدخول
     toggleForm();
 }
 
 function saveToSessionStorage(event) {
-    event.preventDefault(); // منع الإرسال التقليدي للنموذج
+    event.preventDefault(); 
 
-    // الحصول على القيم من الحقول
     const email = document.getElementById('login-email').value;
     const password = document.getElementById('login-password').value;
 
-    // تخزين البيانات في sessionStorage
     sessionStorage.setItem('login-email', email);
     sessionStorage.setItem('login-password', password);
 

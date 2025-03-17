@@ -22,15 +22,12 @@ let commentText = commentInput.value.trim();
 if (commentText !== "") {
     let commentsContainer = document.getElementById("commentsContainer");
 
-    // إنشاء عنصر جديد للتعليق
     let newComment = document.createElement("div");
     newComment.className = "comment";
     newComment.textContent = commentText; 
 
-    // إضافة التعليق إلى الحاوية
     commentsContainer.appendChild(newComment);
 
-    // إعادة تعيين قيمة الإدخال
     commentInput.value = "";
 } else {
     alert("يرجى إدخال تعليق قبل النشر.");

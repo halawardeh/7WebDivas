@@ -9,7 +9,6 @@ window.addEventListener("load", function () {
 function checkSession() {
     const email = sessionStorage.getItem('login-email');
     
-    // إذا كانت الجلسة تحتوي على بريد إلكتروني، إخفاء روابط تسجيل الدخول وفتح روابط البروفايل
     if (email) {
         document.getElementById('auth-links').classList.add('d-none');
         document.getElementById('auth-links-mobile').classList.add('d-none');
@@ -21,12 +20,10 @@ function checkSession() {
     }
 }
 
-// Function to handle logout
 function logout() {
     sessionStorage.removeItem('login-email');
     sessionStorage.removeItem('login-password');
-    window.location.href = '/pages/login.html';  // إعادة التوجيه إلى صفحة تسجيل الدخول
+    window.location.href = '/pages/login.html';  
 }
 
-// Call the checkSession function when the page loads
 window.onload = checkSession;
