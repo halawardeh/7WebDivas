@@ -1,4 +1,5 @@
 window.onload = function() {
+    console.log("hi")
         const storedFullName = localStorage.getItem('fullName');
         const storedPhoneNumber = localStorage.getItem('phoneNumber');
         const storedEmail = localStorage.getItem('email');
@@ -15,4 +16,5 @@ window.onload = function() {
         } else {
             document.getElementById('profilePic').src = './images/default.jpg';
         }
+        console.log(storedEmail)
     };

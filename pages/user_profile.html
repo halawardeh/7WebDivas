@@ -17,9 +17,9 @@
                 <a class="navbar-brand fw-bold me-3" href="#"><img src="/images/logo1.png" width="100"></a>
                 <ul class="navbar-nav d-none d-lg-flex">
                     <li class="nav-item"><a class="nav-link" href="/pages/index.html">الرئيسية</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">النشاطات</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/activity.html">النشاطات</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/community.html">المنتدى</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pages/Feedback.html">اتصل بنا</a></li>
                 </ul>
             </div>
     
@@ -28,10 +28,10 @@
             </button>
     
             <div class="collapse navbar-collapse justify-content-end leftCont" id="navbarNav">
-                <ul class="navbar-nav left" id="auth-links">
-                    <li class="nav-item"><a class="nav-link" href="/pages/login.html">تسجيل الدخول</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">إنشاء حساب</a></li>
-                </ul>
+              <ul class="navbar-nav" id="profile-links" style="width: 80%;">
+                <li class="nav-item"><a class="nav-link" href="/pages/user_profile.html">بروفايل</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" onclick="logout()">تسجيل خروج</a></li>
+            </ul>
     
                 <ul class="navbar-nav d-lg-none" id="auth-links-mobile">
                     <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
@@ -40,10 +40,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
                 </ul>
     
-                <ul class="navbar-nav d-none" id="profile-links" style="width: 80%;">
-                    <li class="nav-item"><a class="nav-link" href="/pages/user_profile.html">بروفايل</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" onclick="logout()">تسجيل خروج</a></li>
-                </ul>
+
             </div>
         </div>
     </nav>
@@ -164,9 +161,8 @@
     <!-- Footer -->
   </div>
   <!-- End of .container -->
-
-    <script src="/js/user_profile.js"></script>
     <script src="/js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/js/user_profile.js"></script>
 </body>
 </html>
